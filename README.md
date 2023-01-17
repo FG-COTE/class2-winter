@@ -1,4 +1,4 @@
-# 🚩 FLAG 코테반 2기 - ⛄ Winter
+# 🚩 FLAG 코테반 2기 - ⛄❄ Winter
 ## 🗻 목적
 * [2021 이코테 YOUTUBE](https://www.youtube.com/watch?v=m-9pAwq1o3w&list=PLRx0vPvlEmdAghTr5mXQxGpHjWqSz0dgC&index=2)에 나온 개념을 ***확실하게*** 익히자!
 * 사고 공유를 통해 사고를 확장하자!
@@ -15,9 +15,9 @@
 
 ## 👨‍🍳 1/17 ~ 1/31 오마카세
 ### 🍖 DFS & BFS
-1. [DFS와 BFS](https://www.acmicpc.net/problem/1260) - 기본 개념 문제 **필수**
-2. [점프왕 쩰리 (Small)](https://www.acmicpc.net/problem/16173) - 기본 개념 문제, DFS/BFS 모든 풀이를 업로드 해주세요 **필수**
-3. [유기농 배추](https://www.acmicpc.net/problem/1012) - 응용 문제 **필수**
+1. [DFS와 BFS](https://www.acmicpc.net/problem/1260) - **(필수)** 기본 개념 문제
+2. [점프왕 쩰리 (Small)](https://www.acmicpc.net/problem/16173) -  **(필수)** 기본 개념 문제, DFS/BFS 모든 풀이를 업로드 해주세요
+3. [유기농 배추](https://www.acmicpc.net/problem/1012) -  **(필수)** 응용 문제
 4. [섬의 개수](https://www.acmicpc.net/problem/4963) - 응용 문제
 5. [토마토](https://www.acmicpc.net/problem/7576) - 🔥🔥🔥 도전 문제
 
