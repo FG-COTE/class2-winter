@@ -1,8 +1,9 @@
 from collections import deque
 
 # 익은 토마토는 1이 된다. 
-# 모든 토마토를 탐색해서 마지막에 0이 있다면, 모두 익지는 못하는 상황
+# 모든 토마토를 탐색해서 마지막에 0이 있다면, 모든 토마토가 익지는 못하는 상황
 
+# 입력값 받기
 def get_tomato(n):
     tomatoes = []
     for i in range(n):
@@ -10,14 +11,14 @@ def get_tomato(n):
     return tomatoes
     
 def bfs(tomatoes):
-    for i in range(len(q)):
+    for i in range(len(q)): # 현재 큐에 있는 원소 수 만큼 반복
         x, y = q.popleft()
         dx = [1, 0, -1, 0]
         dy = [0, 1, 0, -1]
         for i in range(4):
             if 0 <= x+dx[i]< n and 0 <= y+dy[i]< m:
                 if tomatoes[x+dx[i]][y+dy[i]] == 0:
-                    tomatoes[x+dx[i]][y+dy[i]] = 1
+                    tomatoes[x+dx[i]][y+dy[i]] = 1 # 토마토 익히기(1로 바꿔주기)
                     q.append((x+dx[i], y+dy[i]))
                 
 
