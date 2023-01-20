@@ -5,8 +5,10 @@ import sys
 
 # 초기화
 def initialize():
+    n = int(sys.stdin.readline())
     for i in range(n):
         graph.append(list(map(int, sys.stdin.readline().split())))
+    return n
 
 # bfs (Q. visited를 만들어야 할까?)
 def bfs(x, y):
@@ -43,10 +45,10 @@ def dfs(x, y):
 
 
 if __name__ == "__main__":
-    n = int(sys.stdin.readline())
+    
     graph = []
     is_valid = False
-    initialize()
+    n = initialize()
     
     #dfs
     dfs(0, 0)
@@ -56,4 +58,4 @@ if __name__ == "__main__":
         print("Hing")
         
     #bfs
-    #print(bfs(0, 0))
+    # print(bfs(0, 0))

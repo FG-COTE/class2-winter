@@ -5,7 +5,6 @@ def initialize(m, n, count):
     graph = [] 
     for i in range(m):
         graph.append([0] * (n))
-        
     for i in range(count):
         x, y = map(int, input().split())
         graph[x][y] = 1
@@ -16,20 +15,16 @@ def bfs(x, y, graph):
     graph[x][y] = 0
     q = deque()
     q.append((x, y))
+    
     while len(q) > 0:
         x, y = q.popleft()
-        if x+1<m and graph[x+1][y] == 1:
-            q.append((x+1, y))
-            graph[x+1][y] = 0
-        if y+1<n and graph[x][y+1] == 1:
-            q.append((x, y+1))
-            graph[x][y+1] = 0
-        if x-1>=0 and graph[x-1][y] == 1:
-            q.append((x-1, y))
-            graph[x-1][y] = 0
-        if y-1>=0 and graph[x][y-1] == 1:
-            q.append((x, y-1))
-            graph[x][y-1] = 0
+        dx = [0, 1, -1, 0]
+        dy = [1, 0, 0, -1]
+        for i in range(4):
+            if x+dx[i]<m and x+dx[i]>=0 and y+dy[i]<n and y+dy[i]>=0:
+                if graph[x+dx[i]][y+dy[i]] == 1:
+                    q.append((x+dx[i], y+dy[i]))
+                    graph[x+dx[i]][y+dy[i]] = 0
     
 
 if __name__ == "__main__":
