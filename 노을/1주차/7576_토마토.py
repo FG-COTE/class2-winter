@@ -4,7 +4,7 @@ from collections import deque
 # 모든 토마토를 탐색해서 마지막에 0이 있다면, 모든 토마토가 익지는 못하는 상황
 
 # 입력값 받기
-def get_tomato(n):
+def get_tomatoes(n):
     tomatoes = []
     for i in range(n):
         tomatoes.append(list(map(int, input().split())))
@@ -25,7 +25,7 @@ def bfs(tomatoes):
 
 if __name__ == "__main__":
     m, n = map(int, input().split())
-    tomatoes = get_tomato(n)
+    tomatoes = get_tomatoes(n)
     result = 0
     q = deque()
     
@@ -44,6 +44,6 @@ if __name__ == "__main__":
     for i in tomatoes:
         for j in i:
             if j == 0:
-                result = 0
-                break
+                print(-1)
+                exit()
     print(result-1)

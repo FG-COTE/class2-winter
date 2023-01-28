@@ -1,4 +1,3 @@
-
 from collections import deque
 import sys
 
@@ -10,7 +9,7 @@ def initialize():
         graph.append(list(map(int, sys.stdin.readline().split())))
     return n
 
-# bfs (Q. visited를 만들어야 할까?)
+# bfs
 def bfs(x, y):
     q = deque()
     q.append([x, y])
