@@ -13,7 +13,6 @@ private val dirs = listOf(
 fun main(args: Array<String>) {
     val (width, height) = br.readLine().split(" ").map { it.toInt() }
     val graph = Array(height) { intArrayOf() }
-    val visited = Array(height) { Array(width) { false } }
 
     repeat(height) { idx ->
         graph[idx] = br.readLine().split(" ").map { it.toInt() }.toIntArray()
@@ -27,7 +26,6 @@ fun main(args: Array<String>) {
         for(w in 0 until width) {
             if(graph[h][w] == 1) {
                 queue.add(Node(h, w))
-                visited[h][w] = true
             }
         }
 
@@ -43,13 +41,11 @@ fun main(args: Array<String>) {
                     newI !in 0 until height ||
                     newJ !in 0 until width ||
                     graph[newI][newJ] == -1 ||
-                    graph[newI][newJ] == 1 ||
-                    visited[newI][newJ]
+                    graph[newI][newJ] == 1
                 ) continue
 
                 graph[newI][newJ] = 1
                 queue.add(Node(newI,newJ))
-                visited[newI][newJ] = true
             }
         }
     }
