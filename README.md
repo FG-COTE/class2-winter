@@ -15,7 +15,7 @@
 
 ## 👨‍🍳 1/31 ~ 2/7 오마카세
 ### 🍤 백트래킹
-1. [N과 M (1)]([https://www.acmicpc.net/problem/2992](https://www.acmicpc.net/problem/15649)) - **(필수)** 기본 개념 문제
+1. [N과 M (1)](https://www.acmicpc.net/problem/15649) - **(필수)** 기본 개념 문제
 2. [근손실](https://www.acmicpc.net/problem/18429) - **(필수)** 기본 개념 문제
 3. [감소하는 수](https://www.acmicpc.net/problem/1038) - 🔥🔥🔥 도전 문제
  
