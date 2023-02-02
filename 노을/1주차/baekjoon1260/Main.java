@@ -1,4 +1,4 @@
-package com.sunset.baekjoon.graph_traversal.baekjoon1260;
+package com.sunset.baekjoon.graphTraversal.baekjoon1260;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -64,6 +64,7 @@ public class Main {
             if (!visited[a]){
                 dfs(a, visited);
             }
+
         }
     }
 
