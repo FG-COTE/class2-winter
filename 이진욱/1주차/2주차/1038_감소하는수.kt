@@ -37,3 +37,12 @@ fun dfs(start: Int, digit: Int, stk: MutableList<Int>) {
         stk.removeLast()
     }
 }
+
+/**
+* dp를 사용하면 더 효율이 좋아졌을 듯 ...
+* 감소하는 수가 최대 몇 개인지 판단하지 못해서 해당 알고리즘을 사용함.
+* https://best-human-developer.tistory.com/86
+* 위 블로그를 보면 감소하는 수의 최대 개수가 1023개임을 이용하여 문제를 품
+* 감소하는 수의 최대 개수를 알았다면 좀 더 쉽게 접근하여 문제를 풀 수 있었을 듯
+* 시간 복잡도의 중요성을 다시 한번 깨달은 문제
+*/
