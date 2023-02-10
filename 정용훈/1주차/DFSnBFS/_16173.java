@@ -33,34 +33,34 @@ public class _16173 {
         dfs(i, j+map[i][j]);
     }
 
-//    static void bfs(int i, int j){
-//        Queue<int[]> queue = new LinkedList<>();
-//
-//        queue.offer(new int[] {i,j});
-//
-//        while(!queue.isEmpty()){
-//            int x = queue.peek()[0];
-//            int y = queue.peek()[1];
-//
-//            if(map[x][y] == -1){
-//                System.out.println("HaruHaru");
-//                exit(0);
-//            }
-//            visited[x][y] = true;
-//
-//            queue.poll();
-//
-//            for(int u=0; u<2; u++){
-//                int cx = x + map[x][y]*dx[u];
-//                int cy = y + map[x][y]*dy[u];
-//
-//                if(cx>=0 && cy>=0 && cx<N && cy<N){
-//                    if(!visited[cx][cy]) queue.offer(new int[] {cx, cy});
-//                }
-//            }
-//        }
-//
-//    }
+    static void bfs(int i, int j){ //return String으로 해도 됨
+        Queue<int[]> queue = new LinkedList<>();
+
+        queue.offer(new int[] {i,j});
+
+        while(!queue.isEmpty()){
+            int x = queue.peek()[0];
+            int y = queue.peek()[1];
+
+            if(map[x][y] == -1){
+                System.out.println("HaruHaru");
+                exit(0);
+            }
+            visited[x][y] = true;
+
+            queue.poll();
+
+            for(int u=0; u<2; u++){
+                int cx = x + map[x][y]*dx[u];
+                int cy = y + map[x][y]*dy[u];
+
+                if(cx>=0 && cy>=0 && cx<N && cy<N){
+                    if(!visited[cx][cy]) queue.offer(new int[] {cx, cy});
+                }
+            }
+        }
+
+    }
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         StringTokenizer st;
@@ -81,7 +81,7 @@ public class _16173 {
         }
 
         dfs(0, 0);
-//        bfs(0, 0);
+        bfs(0, 0);
         System.out.println("Hing");
 
         br.close();
