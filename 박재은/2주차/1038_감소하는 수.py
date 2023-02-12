@@ -20,6 +20,7 @@ else:
                 tmp += str(g)
             tmp = int(tmp)
             li.append(tmp)
+    # print(li)
     li.sort()
     print(li[n])
 
