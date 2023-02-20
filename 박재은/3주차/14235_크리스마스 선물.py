@@ -18,7 +18,7 @@ for _ in range(0, n):
         # 선물 주머니에 있는 제일 좋은 것을 줄 때
         else:
             answer.append(-heapq.heappop(gift))
-            
+                                                                                                                                                                                                        
     # 선물 주머니에 채워 넣을 때
     else:
        for i in range(1, len(tmpLi)):
